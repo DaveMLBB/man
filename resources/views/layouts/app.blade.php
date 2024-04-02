@@ -83,7 +83,10 @@
         <a href="{{ url('/fornitori') }}"><i class="fas fa-industry"></i> Fornitori</a>
         <a href="{{ url('/preventivi') }}"><i class="fas fa-file-invoice-dollar"></i> Preventivi</a>
         <a href="{{ url('/ddt') }}"><i class="fas fa-truck-loading"></i> DDT</a>
-
+        <a href="{{ url('/fatture') }}"><i class="fas fa-file-invoice"></i> Fatture</a>
+        <a href="{{ url('/magazzino') }}"><i class="fas fa-warehouse"></i> Magazzino</a>
+        <a href="{{ url('/articoli') }}"><i class="fas fa-boxes"></i> Articoli</a>
+        <a href="{{ url('/reportistica') }}"><i class="fas fa-chart-line"></i> Reportistica</a>
 
         <!-- Aggiungi altre sezioni qui -->
     </div>

@@ -1,10 +1,14 @@
 <?php
 
+use App\Http\Controllers\ArticoliController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\DDTController;
+use App\Http\Controllers\FattureController;
 use App\Http\Controllers\FornitoriController;
+use App\Http\Controllers\MagazzinoController;
 use App\Http\Controllers\PreventiviController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,4 +38,10 @@ Route::get('/preventivi', [PreventiviController::class, 'index'])->name('prevent
 
 Route::get('/ddt', [DDTController::class, 'index'])->name('ddt.index');
 
+Route::get('/magazzino', [MagazzinoController::class, 'index'])->name('magazzino.index');
 
+Route::get('/articoli', [ArticoliController::class, 'index'])->name('articoli.index');
+
+Route::get('/reportistica', [ReportController::class, 'index'])->name('report.index');
+
+Route::get('/fatture', [FattureController::class, 'index'])->name('fatture.index');
