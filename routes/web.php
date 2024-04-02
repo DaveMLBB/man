@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\DDTController;
 use App\Http\Controllers\FornitoriController;
 use App\Http\Controllers\PreventiviController;
 use Illuminate\Support\Facades\Route;
@@ -30,4 +31,7 @@ Route::get('/clienti', [ClienteController::class, 'index'])->name('clienti.index
 Route::get('/fornitori', [FornitoriController::class, 'index'])->name('fornitori.index');
 
 Route::get('/preventivi', [PreventiviController::class, 'index'])->name('preventivi.index');
+
+Route::get('/ddt', [DDTController::class, 'index'])->name('ddt.index');
+
 

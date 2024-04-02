@@ -67,12 +67,11 @@
         .header-button:hover {
             background-color: #0056b3;
         }
-        /* Stile personalizzato per il pulsante Filtri */
         .header-button-filtri {
-            background-color: #ffa500; /* Arancione */
+            background-color: #ffa500; 
         }
         .header-button-filtri:hover {
-            background-color: #cc8400; /* Arancione più scuro al passaggio del mouse */
+            background-color: #cc8400; 
         }
     </style>
 </head>
@@ -83,13 +82,15 @@
         <a href="{{ url('/clienti') }}"><i class="fas fa-users"></i> Clienti</a>
         <a href="{{ url('/fornitori') }}"><i class="fas fa-industry"></i> Fornitori</a>
         <a href="{{ url('/preventivi') }}"><i class="fas fa-file-invoice-dollar"></i> Preventivi</a>
+        <a href="{{ url('/ddt') }}"><i class="fas fa-truck-loading"></i> DDT</a>
 
-        <!-- Aggiungi altri link qui -->
+
+        <!-- Aggiungi altre sezioni qui -->
     </div>
     <div class="header">
         <h1>@yield('header')</h1>
         <div class="header-buttons">
-            @yield('header-buttons') <!-- Include i pulsanti specifici della pagina qui -->
+            @yield('header-buttons') 
         </div>
     </div>
     <div class="main-content">
