@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\FornitoriController;
+use App\Http\Controllers\PreventiviController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,4 +25,9 @@ Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth'])->name('dashboard');
 
+Route::get('/clienti', [ClienteController::class, 'index'])->name('clienti.index');
+
+Route::get('/fornitori', [FornitoriController::class, 'index'])->name('fornitori.index');
+
+Route::get('/preventivi', [PreventiviController::class, 'index'])->name('preventivi.index');
 
