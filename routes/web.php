@@ -30,7 +30,12 @@ Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth'])->name('dashboard');
 
+// CLIENTI ROUTE
 Route::get('/clienti', [ClienteController::class, 'index'])->name('clienti.index');
+Route::get('/clienti/nuovo', [ClienteController::class, 'create'])->name('clienti.create');
+Route::post('/clienti/nuovo/salva', [ClienteController::class, 'store'])->name('clienti.store');
+Route::get('/clienti/search', [ClienteController::class, 'search'])->name('clienti.search');
+
 
 Route::get('/fornitori', [FornitoriController::class, 'index'])->name('fornitori.index');
 
