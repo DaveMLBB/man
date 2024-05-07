@@ -56,5 +56,4 @@ class ClienteController extends Controller
         return view('clienti', compact('clienti'));
     }
 
-
 }
